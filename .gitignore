@@ -1,0 +1,6 @@
+/static/**
+!/static
+__pycache__
+.vscode
+db.sqlite3
+djangocelery-env/
