@@ -10,6 +10,8 @@ app = Celery('djangoceleryproject')
 
 app.conf.enable_utc = False
 
+broker_connection_retry_on_startup = True
+
 app.conf.update(timezon = 'Turkey')
 
 app.config_from_object(settings, namespace='CELERY')
