@@ -2,12 +2,15 @@ from django.contrib.auth import get_user_model
 from celery import shared_task
 from django.core.mail import send_mail
 from djangoceleryproject import settings
+from django.utils import timezone
+from datetime import timedelta
+
 
 @shared_task(bind=True)
 def send_mail_func(self):
     
     users = get_user_model().objects.all()
-    
+    # timezone.localtime(users.date_time) + timedelta(days=2)
     for user in users:
         
         mail_subject = "Hi! Celery Testing"

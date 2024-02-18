@@ -145,7 +145,7 @@ CELERY_BROKER_URL = "redis://127.0.0.1:6379"
 ACCEPT_CONTENT = ["application/json"]
 RESULT_SERIALIZER = "json"
 TASK_SERIALIZER = "json"
-TIMEZONE ="Turkey"
+TIMEZONE ='Europe/Istanbul'
 
 
 RESULT_BACKEND = 'db+sqlite3:///results.sqlite3'

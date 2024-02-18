@@ -145,7 +145,7 @@ except exceptions.OperationalError as e:
 ACCEPT_CONTENT = ["application/json"]
 RESULT_SERIALIZER = "json"
 TASK_SERIALIZER = "json"
-TIMEZONE ="Turkey"
+TIMEZONE ='Europe/Istanbul'
 
 
 RESULT_BACKEND = 'db+sqlite3:///results.sqlite3'
